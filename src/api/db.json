@@ -1,0 +1,101 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "firstName": "javad",
+      "lastName": "jadidi"
+    },
+    {
+      "id": 2,
+      "firstName": "ali",
+      "lastName": "khodamy"
+    },
+    {
+      "id": 3,
+      "firstName": "mamad",
+      "lastName": "rezaei"
+    },
+    {
+      "id": 4,
+      "firstName": "arash",
+      "lastName": "kamali"
+    },
+    {
+      "id": 5,
+      "firstName": "mehty",
+      "lastName": "madahzadeh"
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "rand title",
+      "content": "lorem content ...........",
+      "date": "data",
+      "reactions": {
+        "eyes": 0,
+        "heart": 0,
+        "hooray": 0,
+        "rocket": 0,
+        "thumbsUp": 0
+      },
+      "user": 1
+    },
+    {
+      "id": 2,
+      "title": "rand title",
+      "content": "lorem content ...........",
+      "date": "data",
+      "reactions": {
+        "eyes": 0,
+        "heart": 0,
+        "hooray": 0,
+        "rocket": 0,
+        "thumbsUp": 0
+      },
+      "user": 2
+    },
+    {
+      "id": 3,
+      "title": "rand title",
+      "content": "lorem content ...........",
+      "date": "data",
+      "reactions": {
+        "eyes": 0,
+        "heart": 0,
+        "hooray": 0,
+        "rocket": 0,
+        "thumbsUp": 0
+      },
+      "user": 2
+    },
+    {
+      "id": 4,
+      "title": "rand title",
+      "content": "lorem content ...........",
+      "date": "data",
+      "reactions": {
+        "eyes": 0,
+        "heart": 0,
+        "hooray": 0,
+        "rocket": 0,
+        "thumbsUp": 0
+      },
+      "user": 5
+    },
+    {
+      "id": 5,
+      "title": "rand title",
+      "content": "lorem content ...........",
+      "date": "data",
+      "reactions": {
+        "eyes": 0,
+        "heart": 0,
+        "hooray": 0,
+        "rocket": 0,
+        "thumbsUp": 0
+      },
+      "user": 5
+    }
+  ]
+}
