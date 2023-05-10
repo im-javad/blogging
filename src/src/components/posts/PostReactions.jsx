@@ -1,23 +1,22 @@
+const reactionIcons = {
+  eyes: "👀",
+  heart: "❤️",
+  hooray: "🎉",
+  rocket: "🚀",
+  thumbsUp: "👍",
+};
+
 function PostReactions({ reactions }) {
-  return (
-    <div>
-      <button type="button" className="muted-button reaction-button">
-        👍 {reactions.thumbsUp}
-      </button>
-      <button type="button" className="muted-button reaction-button">
-        🎉 {reactions.hooray}
-      </button>
-      <button type="button" className="muted-button reaction-button">
-        ❤️ {reactions.heart}
-      </button>
-      <button type="button" className="muted-button reaction-button">
-        🚀 {reactions.rocket}
-      </button>
-      <button type="button" className="muted-button reaction-button">
-        👀 {reactions.eyes}
-      </button>
-    </div>
-  );
+  const preparedReactions = Object.keys(reactions).map((reaction) => (
+    <button
+      type="button"
+      className="muted-button reaction-button"
+      key={reaction}
+    >
+      {reactionIcons[reaction]} {reactions[reaction]}
+    </button>
+  ));
+  return <div>{preparedReactions}</div>;
 }
 
 export default PostReactions;

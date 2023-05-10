@@ -1,4 +1,5 @@
 import PostAuthor from "./PostAuthor";
+import PostDate from "./PostDate";
 
 function PostContent({ post }) {
   return (
@@ -6,9 +7,7 @@ function PostContent({ post }) {
       <h3>{post.title}</h3>
       <div>
         <PostAuthor authorId={post.author} />
-        <span title={post.date}>
-          &nbsp; <i>{post.date}</i>
-        </span>
+        <PostDate date={post.date} />
       </div>
       <p className="post-content">{post.content}</p>
     </>

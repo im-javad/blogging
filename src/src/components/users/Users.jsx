@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
 function Users() {
@@ -13,19 +12,10 @@ function Users() {
                 Candace Braun
               </Link>
             </li>
-            <li>
-              <Link to="/users/2ki_W9Uf9jYri0vswEfN2" dideo-checked="true">
-                Emiliano Prohaska I
-              </Link>
-            </li>
-            <li>
-              <Link to="/users/yixgAD2npsFRh8cNoR8-w" dideo-checked="true">
-                Willard Senger
-              </Link>
-            </li>
           </ul>
         </section>
       </div>
+
       <div className="App">
         <section>
           <h2>Candace Braun</h2>
@@ -35,21 +25,10 @@ function Users() {
                 Those pandas are nothing more than sheeps?
               </Link>
             </li>
-            <li>
-              <Link to="/posts/s1n1EaGGX8YKIm9LN_GB5" dideo-checked="true">
-                The impartial shark reveals itself as an amused frog to those
-                who look.
-              </Link>
-            </li>
-            <li>
-              <Link to="/posts/3VWHc4H5lTvB9xAU0iDZ9" dideo-checked="true">
-                The zeitgeist contends that some posit the witty scorpion to be
-                less than successful?
-              </Link>
-            </li>
           </ul>
         </section>
       </div>
+
       <div classNameName="App">
         <section>
           <article className="post">
@@ -101,6 +80,7 @@ function Users() {
           </article>
         </section>
       </div>
+      
       <div className="App">
         <section>
           <h2>Edit Post</h2>
@@ -132,6 +112,7 @@ function Users() {
           <button type="button">Save Post</button>
         </section>
       </div>
+
     </>
   );
 }
