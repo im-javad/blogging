@@ -19,6 +19,7 @@ export const {
   selectById: selectUserById,
   selectIds: selectUserIds,
   selectEntities: selectUserEntities,
+  selectAll: selectAllUsers,
 } = usersAdapter.getSelectors((state) => state.users);
 
 const initialState = usersAdapter.getInitialState({
