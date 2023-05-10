@@ -1,17 +1,20 @@
-import React from "react";
-import Navbar from "./components/general/Navbar";
-import Posts from "./components/posts/Posts";
-import Users from "./components/users/Users";
-import Notifications from "./components/notification/Notofications";
 import { BrowserRouter as Router } from "react-router-dom";
+import { fetchPosts } from "./features/posts/postSlice";
+import { fetchUsers } from "./features/users/userSlice";
+import store from "./app/store";
+import PostPage from "./components/posts/PostPage";
+import Navbar from "./components/general/Navbar";
 import "./index.css";
+
+store.dispatch(fetchPosts());
+store.dispatch(fetchUsers());
 
 function App() {
   return (
     <>
       <Router>
         <Navbar />
-        {/* <Posts /> */}
+        <PostPage />
         {/* <Users /> */}
         {/* <Notifications /> */}
       </Router>

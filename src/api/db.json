@@ -31,7 +31,7 @@
       "id": 1,
       "title": "rand title",
       "content": "lorem content ...........",
-      "date": "data",
+      "date": "2020/02/12",
       "reactions": {
         "eyes": 0,
         "heart": 0,
@@ -39,13 +39,13 @@
         "rocket": 0,
         "thumbsUp": 0
       },
-      "user": 1
+      "author": 1
     },
     {
       "id": 2,
       "title": "rand title",
       "content": "lorem content ...........",
-      "date": "data",
+      "date": "2020/02/12",
       "reactions": {
         "eyes": 0,
         "heart": 0,
@@ -53,13 +53,13 @@
         "rocket": 0,
         "thumbsUp": 0
       },
-      "user": 2
+      "author": 2
     },
     {
       "id": 3,
       "title": "rand title",
       "content": "lorem content ...........",
-      "date": "data",
+      "date": "2020/02/12",
       "reactions": {
         "eyes": 0,
         "heart": 0,
@@ -67,13 +67,13 @@
         "rocket": 0,
         "thumbsUp": 0
       },
-      "user": 2
+      "author": 2
     },
     {
       "id": 4,
       "title": "rand title",
       "content": "lorem content ...........",
-      "date": "data",
+      "date": "2020/02/12",
       "reactions": {
         "eyes": 0,
         "heart": 0,
@@ -81,13 +81,13 @@
         "rocket": 0,
         "thumbsUp": 0
       },
-      "user": 5
+      "author": 5
     },
     {
       "id": 5,
       "title": "rand title",
       "content": "lorem content ...........",
-      "date": "data",
+      "date": "2020/02/12",
       "reactions": {
         "eyes": 0,
         "heart": 0,
@@ -95,7 +95,7 @@
         "rocket": 0,
         "thumbsUp": 0
       },
-      "user": 5
+      "author": 5
     }
   ]
 }

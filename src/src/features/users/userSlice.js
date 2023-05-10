@@ -13,8 +13,14 @@ export const fetchUsers = createAsyncThunk("posts/fetchUsers", async () => {
 
 const usersAdapter = createEntityAdapter({
   selectId: (user) => user.id,
-  // sortComparer: (a, b) => a.name.localCompare(b.name),
 });
+
+export const {
+  selectById: selectUserById,
+  selectIds: selectUserIds,
+  selectEntities: selectUserEntities,
+} = usersAdapter.getSelectors((state) => state.users);
+
 const initialState = usersAdapter.getInitialState({
   inLoading: 0,
   error: 0,

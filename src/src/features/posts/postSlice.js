@@ -12,9 +12,15 @@ export const fetchPosts = createAsyncThunk("posts/fetchPosts", async () => {
 });
 
 const postsAdapter = createEntityAdapter({
-  selectId: (post) => post.id,
-  // sortComparer: (a, b) => a.name.localCompare(b.name),
+  selectId: (user) => user.id,
 });
+
+export const {
+  selectById: selectPostById,
+  selectIds: selectPostIds,
+  selectEntities: selectPostEntities,
+} = postsAdapter.getSelectors((state) => state.posts);
+
 const initialState = postsAdapter.getInitialState({
   inLoading: 0,
   error: 0,
@@ -29,7 +35,7 @@ const postSlice = createSlice({
       state.inLoading = 1;
     },
     [fetchPosts.fulfilled]: (state, action) => {
-      postsAdapter.updateMany(state, action.payload);
+      postsAdapter.upsertMany(state, action.payload);
       state.inLoading = 0;
     },
     [fetchPosts.rejected]: (state) => {
@@ -40,4 +46,3 @@ const postSlice = createSlice({
 });
 
 export const postReducer = postSlice.reducer;
- 
