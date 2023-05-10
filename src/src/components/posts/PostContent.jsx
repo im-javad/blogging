@@ -9,7 +9,7 @@ function PostContent({ post }) {
         <PostAuthor authorId={post.author} />
         <PostDate date={post.date} />
       </div>
-      <p className="post-content">{post.content}</p>
+      <p className="post-content">{post.content.substring(0, 50)}.....</p>
     </>
   );
 }

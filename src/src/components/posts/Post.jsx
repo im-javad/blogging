@@ -2,7 +2,7 @@ import { useSelector } from "react-redux";
 import { selectPostById } from "../../features/posts/postSlice";
 import PostContent from "./PostContent";
 import PostReactions from "./PostReactions";
-import PostShow from "./PostShow";
+import PostShowLink from "./PostShowLink";
 
 function Post({ postId }) {
   const post = useSelector((state) => selectPostById(state, postId));
@@ -12,7 +12,7 @@ function Post({ postId }) {
     <article className="post-excerpt">
       <PostContent post={post} />
       <PostReactions reactions={reactions} />
-      <PostShow postId={post.id} />
+      <PostShowLink postId={post.id} />
     </article>
   );
 }
